@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chara Gkorou - Mechanical Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('mep-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 20px;
+        }
+
+        .initials-logo {
+            width: 80px;
+            height: 80px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .details {
+            margin: 15px 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .language-selector {
+            margin-bottom: 15px;
+        }
+
+        .language-selector button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 150px;
+            margin: 5px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .linkedin {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .initials-logo {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .language-selector button {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'gr') {
+                document.getElementById('name').textContent = 'Χαρά Γκόρου';
+                document.getElementById('title').textContent = 'Μηχανολόγος Μηχανικός | Ειδικός MEP & BIM';
+                document.getElementById('expertise').textContent = 'Ειδικός στη Μηχανολογία, Ηλεκτρολογικά, Υδραυλικά (MEP) και Μοντελοποίηση Πληροφοριών Κτιρίου (BIM).';
+            } else {
+                document.getElementById('name').textContent = 'Chara Gkorou';
+                document.getElementById('title').textContent = 'Mechanical Engineer | MEP & BIM Specialist';
+                document.getElementById('expertise').textContent = 'Expert in Mechanical, Electrical, Plumbing (MEP) Engineering and Building Information Modeling (BIM).';
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+    <div class="language-selector">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('gr')">Ελληνικά</button>
+    </div>
+    <div class="initials-logo">CG</div>
+    <h1 id="name">Chara Gkorou</h1>
+    <div class="details">
+        <p id="title">Mechanical Engineer | MEP & BIM Specialist</p>
+        <p id="expertise">Expert in Mechanical, Electrical, Plumbing (MEP) Engineering and Building Information Modeling (BIM).</p>
+    </div>
+    <div class="gallery">
+        <img src="bim-image.jpg" alt="BIM Project">
+    </div>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:gkorou.zch@gmail.com">gkorou.zch@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+306949628681">+30 6949628681</a></p>
+        <p class="linkedin">LinkedIn: <a href="http://www.linkedin.com/in/gkorou-zacharoula" target="_blank">Chara Gkorou</a></p>
+    </div>
+</div>
+</body>
+</html>
