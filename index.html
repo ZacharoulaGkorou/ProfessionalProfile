@@ -7,15 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
+            color: #260c0c;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('mep-image.jpg');
+            background-image: url('chara-gkorou-logo.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -28,7 +27,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.8);
         }
 
         .container {
@@ -39,22 +37,8 @@
             border-radius: 8px;
             width: 90%;
             max-width: 700px;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.5);
             margin: 20px;
-        }
-
-        .initials-logo {
-            width: 80px;
-            height: 80px;
-            background-color: #000;
-            color: #fff;
-            border-radius: 50%;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 15px;
-            font-weight: bold;
         }
 
         h1 {
@@ -70,12 +54,13 @@
             margin-top: 20px;
         }
 
-        .contact-info p {
-            margin: 5px 0;
-        }
-
         .language-selector {
             margin-bottom: 15px;
+        }
+
+        .language-selector img {
+            width: 53px;
+            height: 40px;
         }
 
         .language-selector button {
@@ -103,29 +88,35 @@
             text-decoration: underline;
         }
 
-        .linkedin {
-            margin-top: 10px;
+        p {
+            margin: 8px 0;
+            font-size: 16px;
         }
 
-        @media (max-width: 600px) {
-            .initials-logo {
-                width: 60px;
-                height: 60px;
-                font-size: 24px;
-            }
+        .contact-info a {
+            color: #000000;
+            text-decoration: none;
+        }
 
-            h1 {
-                font-size: 20px;
-            }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
 
-            .container {
-                padding: 15px;
-            }
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
 
-            .language-selector button {
-                font-size: 12px;
-                padding: 5px;
-            }
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info span {
+            display: inline-block;
+            vertical-align: middle;
         }
     </style>
     <script>
@@ -145,11 +136,13 @@
 <body>
 <div class="overlay"></div>
 <div class="container">
-    <div class="language-selector">
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('gr')">Ελληνικά</button>
+    <div class="language-selector">        
+        <img src="gr.png" alt="Greek" onclick="setLanguage('gr')" class="flag">
+        <img src="en.png" alt="English" onclick="setLanguage('en')" class="flag">
     </div>
-    <div class="initials-logo">CG</div>
+    <div class="gallery">
+        <img src="chara-gkorou-logo.jpg" alt="Chara Gkorou">
+    </div>
     <h1 id="name">Chara Gkorou</h1>
     <div class="details">
         <p id="title">Mechanical Engineer | MEP & BIM Specialist</p>
@@ -159,9 +152,9 @@
         <img src="bim-image.jpg" alt="BIM Project">
     </div>
     <div class="contact-info">
-        <p>Email: <a href="mailto:gkorou.zch@gmail.com">gkorou.zch@gmail.com</a></p>
-        <p>Mobile: <a href="tel:+306949628681">+30 6949628681</a></p>
-        <p class="linkedin">LinkedIn: <a href="http://www.linkedin.com/in/gkorou-zacharoula" target="_blank">Chara Gkorou</a></p>
+        <p><img src="email-image.png" alt="Email"><a href="mailto:gkorou.zch@gmail.com">gkorou.zch@gmail.com</a></p>
+        <p><img src="phone-number-image.png" alt="Phone Number"><a href="tel:+306949628681">+30 6949628681</a></p>
+        <p><img src="linkedin-image.png" alt="LinkedIn Profile"><a href="http://www.linkedin.com/in/gkorou-zacharoula" target="_blank">Chara Gkorou</a></p>
     </div>
 </div>
 </body>
